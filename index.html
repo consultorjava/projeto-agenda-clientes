@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="Agenda de contatos" />
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="nome-cliente" required placeholder="Nome do Cliente" />
+            <input type="text" id="telefone-cliente"  required placeholder="Telefone do Cliente" />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Cliente</th>
+                    <th>Telefone do Cliente</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                 <tr>
+                     <td class="total-agen">Total dos Agendamentos</td>
+                     <td colspan="2" id="total-agendamentos" class="total-agen">---</td>
+                 </tr>
+            </tfoot>
+        </table>
+   </div>
+   <script src="./main.js"></script> 
+</body>
+</html>
